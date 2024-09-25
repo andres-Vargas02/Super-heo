@@ -27,9 +27,11 @@ class FriendsAdapter(
 
     inner class FriendViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val friendName: TextView = itemView.findViewById(R.id.tvFriendName)
+        private val friendImage: ImageView = itemView.findViewById(R.id.ivFriendImage)
 
         fun bind(friend: Superhero) {
             friendName.text = friend.name
+            friendImage.setImageResource(friend.photo)
 
         }
     }
