@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Generamos la lista de superhéroes
-        val superheroes = generateSuperheroes()
+        val superheroes = generateSuperheroes(this)
 
         // Configuramos el RecyclerView
         binding.rvHero.layoutManager = LinearLayoutManager(this)
