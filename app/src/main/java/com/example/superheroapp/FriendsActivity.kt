@@ -21,5 +21,6 @@ class FriendsActivity : AppCompatActivity() {
 
         binding.rvFriends.layoutManager = LinearLayoutManager(this)
         binding.rvFriends.adapter = FriendsAdapter(friends)
+
     }
 }

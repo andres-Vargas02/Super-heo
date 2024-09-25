@@ -33,5 +33,6 @@ class EnemiesAdapter(
             enemyName.text = enemy.name
             enemyImage.setImageResource(enemy.photo)
         }
+
     }
 }

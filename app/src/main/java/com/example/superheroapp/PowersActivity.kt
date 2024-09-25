@@ -21,5 +21,6 @@ class PowersActivity : AppCompatActivity() {
 
         binding.rvPowers.layoutManager = LinearLayoutManager(this)
         binding.rvPowers.adapter = PowersAdapter(selectedPowers)
+
     }
 }

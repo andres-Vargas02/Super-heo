@@ -21,5 +21,6 @@ class EnemiesActivity : AppCompatActivity() {
 
         binding.rvEnemies.layoutManager = LinearLayoutManager(this)
         binding.rvEnemies.adapter = EnemiesAdapter(enemies)
+
     }
 }

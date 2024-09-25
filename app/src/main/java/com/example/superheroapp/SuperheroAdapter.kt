@@ -65,6 +65,7 @@ class SuperheroAdapter(
                 val intent = Intent(itemView.context, LocationsActivity::class.java)
                 intent.putIntegerArrayListExtra("locations", ArrayList(superhero.locations))
                 itemView.context.startActivity(intent)
+
             }
         }
     }

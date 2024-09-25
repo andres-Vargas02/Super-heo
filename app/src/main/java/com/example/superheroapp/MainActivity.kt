@@ -22,4 +22,5 @@ class MainActivity : AppCompatActivity() {
         binding.rvHero.layoutManager = LinearLayoutManager(this)
         binding.rvHero.adapter = SuperheroAdapter(superheroes)
     }
+
 }

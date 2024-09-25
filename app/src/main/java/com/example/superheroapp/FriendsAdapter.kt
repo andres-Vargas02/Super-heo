@@ -28,7 +28,6 @@ class FriendsAdapter(
     inner class FriendViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val friendName: TextView = itemView.findViewById(R.id.tvFriendName)
 
-
         fun bind(friend: Superhero) {
             friendName.text = friend.name
 

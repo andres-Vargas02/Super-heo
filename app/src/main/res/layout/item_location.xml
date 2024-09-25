@@ -23,8 +23,5 @@
             android:textSize="24sp"
             android:textStyle="bold"
             tools:text="Location Name" />
-
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

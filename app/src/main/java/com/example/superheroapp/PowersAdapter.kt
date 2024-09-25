@@ -29,6 +29,7 @@ class PowersAdapter(
 
         fun bind(power: Power) {
             powerName.text = power.name
+
         }
     }
 }

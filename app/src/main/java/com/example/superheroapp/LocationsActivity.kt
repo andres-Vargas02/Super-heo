@@ -21,5 +21,6 @@ class LocationsActivity : AppCompatActivity() {
 
         binding.rvLocations.layoutManager = LinearLayoutManager(this)
         binding.rvLocations.adapter = LocationsAdapter(locations)
+
     }
 }

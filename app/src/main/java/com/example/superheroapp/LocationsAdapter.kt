@@ -30,5 +30,6 @@ class LocationsAdapter(
         fun bind(location: Location) {
             locationName.text = location.name
         }
+
     }
 }

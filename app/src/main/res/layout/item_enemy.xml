@@ -30,7 +30,5 @@
             android:layout_height="104dp"
             android:layout_gravity="end"
             tools:srcCompat="@tools:sample/avatars" />
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

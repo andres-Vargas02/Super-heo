@@ -89,7 +89,5 @@
                 android:layout_weight="1"
                 android:text="Ubicacion" />
         </LinearLayout>
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
