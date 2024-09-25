@@ -1,12 +1,12 @@
 package com.example.superheroapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.superheroapp.data.models.Superhero
 
@@ -37,26 +37,34 @@ class SuperheroAdapter(
 
         fun bind(superhero: Superhero) {
             superheroName.text = superhero.name
-            superheroImage.setImageResource(superhero.photo) // Asignamos la imagen del superhéroe
+            superheroImage.setImageResource(superhero.photo)
 
-            // Listener para el botón de Poderes
+            // Listener para abrir la actividad de Poderes
             btnPowers.setOnClickListener {
-                Toast.makeText(itemView.context, "${superhero.name} tiene estos poderes: ${superhero.powers}", Toast.LENGTH_SHORT).show()
+                val intent = Intent(itemView.context, PowersActivity::class.java)
+                intent.putIntegerArrayListExtra("powers", ArrayList(superhero.powers))
+                itemView.context.startActivity(intent)
             }
 
-            // Listener para el botón de Amigos
+            // Listener para abrir la actividad de Amigos
             btnFriends.setOnClickListener {
-                Toast.makeText(itemView.context, "Amigos de ${superhero.name}: ${superhero.friends}", Toast.LENGTH_SHORT).show()
+                val intent = Intent(itemView.context, FriendsActivity::class.java)
+                intent.putIntegerArrayListExtra("friends", ArrayList(superhero.friends))
+                itemView.context.startActivity(intent)
             }
 
-            // Listener para el botón de Enemigos
+            // Listener para abrir la actividad de Enemigos
             btnEnemies.setOnClickListener {
-                Toast.makeText(itemView.context, "Enemigos de ${superhero.name}: ${superhero.enemies}", Toast.LENGTH_SHORT).show()
+                val intent = Intent(itemView.context, EnemiesActivity::class.java)
+                intent.putIntegerArrayListExtra("enemies", ArrayList(superhero.enemies))
+                itemView.context.startActivity(intent)
             }
 
-            // Listener para el botón de Ubicaciones
+            // Listener para abrir la actividad de Ubicaciones
             btnLocations.setOnClickListener {
-                Toast.makeText(itemView.context, "Ubicaciones de ${superhero.name}: ${superhero.locations}", Toast.LENGTH_SHORT).show()
+                val intent = Intent(itemView.context, LocationsActivity::class.java)
+                intent.putIntegerArrayListExtra("locations", ArrayList(superhero.locations))
+                itemView.context.startActivity(intent)
             }
         }
     }
